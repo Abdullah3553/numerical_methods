@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/abdul/CLionProjects/numerical_methods/Number_operations.h
+Numbers.h
 C:/Users/abdul/CLionProjects/numerical_methods/Numbers.h
+
+C:/Users/abdul/CLionProjects/numerical_methods/Numbers.h
+string
+-
 
 C:/Users/abdul/CLionProjects/numerical_methods/main.cpp
 iostream
 -
-Numbers.h
-C:/Users/abdul/CLionProjects/numerical_methods/Numbers.h
+Number_operations.h
+C:/Users/abdul/CLionProjects/numerical_methods/Number_operations.h
 

@@ -1,13 +1,12 @@
 #include <iostream>
-#include "Numbers.h"
+#include "Number_operations.h"
 
 using namespace std;
 
 int main(){
-    Decimal num;
+    Binary x("0101101010");
+    Number_Operations op;
 
-    num.set(10);
-
-    cout << num.get() << endl;
+    cout << op.binary_to_decimal(x) << endl;
     return 0;
 }

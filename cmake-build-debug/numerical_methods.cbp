@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/abdul/CLionProjects/numerical_methods/Number_operations.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/abdul/CLionProjects/numerical_methods/Numbers.h">
 			<Option target="Project"/>
 		</Unit>
