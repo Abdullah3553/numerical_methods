@@ -8,7 +8,7 @@ protected :
     string number;
 public:
     str_num(){}
-    str_num(string &value){
+    str_num(string value){
         number = value;
     }
     void set(string value){
