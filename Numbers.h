@@ -3,9 +3,30 @@
 using namespace std;
 
 
-class Decimal{
-    int number;
+class str_num{
+protected :
+    string number;
+public:
+    str_num(){}
+    str_num(string &value){
+        number = value;
+    }
+    void set(string value){
+        number = value;
+    }
+    string get() {
+        return number;
+    }
+    unsigned int size(){
+        return number.size();
+    }
+    char operator [](int index){
+        return number[index];
+    }
+};
 
+class Decimal {
+    int number;
 public:
     Decimal(){number = 0;}
 
@@ -21,68 +42,28 @@ public:
     }
 };
 
-class Binary{
-    string number;
-
+class Binary : public str_num{
 public:
     Binary(){
         number="00000000";
     }
-    Binary(string value){
-        number = value;
-    }
-    void set(string value){
-        number = value;
-    }
-    string get(){
-        return number;
-    }
-    unsigned int size(){
-        return number.size();
-    }
-    char operator [](int index){
-        return number[index];
-    }
+    Binary(string value) : str_num(value){}
+
 };
 
-class Octal{
-    string number;
-
+class Octal : public str_num{
 public:
     Octal(){
         number="000";
     }
-    Octal(string value){
-        number = value;
-    }
-    void set(string value){
-        number = value;
-    }
-    string get(){
-        return number;
-    }
-    unsigned int size(){
-        return number.size();
-    }
+    Octal(string value): str_num(value){}
 };
 
-class Hexadecimal{
-    string number;
-
+class Hexadecimal : public str_num{
 public:
     Hexadecimal(){
         number="00";
     }
-    Hexadecimal(string value){
-        number = value;
-    }
-    void set(string value){
-        number = value;
-    }
-    string get(){
-        return number;
-    }
-    unsigned int size(){
-        return number.size();
-    }
+    Hexadecimal(string value): str_num(value){}
+
 };
