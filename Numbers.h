@@ -34,12 +34,13 @@ public:
         number = value;
     }
 
-    void set(double value){
+    void set(int value){
         number = value ;
     }
     int get(){
         return number;
     }
+
 };
 
 class Binary : public str_num{

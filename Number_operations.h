@@ -18,11 +18,11 @@ public:
         return return_val;
     }
 
-    string decimal_to_binary(int number){
+    string decimal_to_binary(Decimal number){
         string return_val;
-        while(number!=0){
-            return_val += (char)((number%2)+'0');
-            number /=2;
+        while(number.get()!=0){
+            return_val += (char)((number.get()%2)+'0');
+            number.set(number.get()/2);
         }
         return return_val;
     }
