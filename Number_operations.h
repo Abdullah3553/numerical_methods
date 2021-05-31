@@ -8,6 +8,9 @@ class Number_Operations{
             return_val*= base;
         return return_val;
     }
+    char encoding[16]={'0', '1', '2', '3', '4', '5',
+                          '6', '7', '8', '9', 'A', 'B',
+                          'C', 'D', 'E', 'F'};
 public:
     // Binary >> all --Begin
     int binary_to_decimal(Binary number){
@@ -25,13 +28,30 @@ public:
         for(int i=0;i<number.size();i++){
             tmp_str+=number[i];
             if(tmp_str.size()==3) {
-                return_val += ((char)binary_to_decimal(Binary(tmp_str)) + '0');
+                return_val += encoding[binary_to_decimal(Binary(tmp_str))];
                 tmp_str.clear();
             }
         }
 
         if(!tmp_str.empty())
-            return_val += ((char)binary_to_decimal(Binary(tmp_str)) + '0');
+            return_val += encoding[binary_to_decimal(Binary(tmp_str))];
+
+
+        return string(return_val.rbegin(), return_val.rend());
+    }
+
+    string binary_to_hexadecimal(Binary number){
+        string return_val, tmp_str;
+        for(int i=0;i<number.size();i++){
+            tmp_str+=number[i];
+            if(tmp_str.size()==4) {
+                return_val += encoding[binary_to_decimal(Binary(tmp_str))];
+                tmp_str.clear();
+            }
+        }
+
+        if(!tmp_str.empty())
+            return_val += encoding[binary_to_decimal(Binary(tmp_str))];
 
 
         return string(return_val.rbegin(), return_val.rend());
