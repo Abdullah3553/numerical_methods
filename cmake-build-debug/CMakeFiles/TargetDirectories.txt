@@ -1,3 +1,0 @@
-/home/abdullah35/Documents/CLionProjects/numerical_methods/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/abdullah35/Documents/CLionProjects/numerical_methods/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/abdullah35/Documents/CLionProjects/numerical_methods/cmake-build-debug/CMakeFiles/Project.dir
