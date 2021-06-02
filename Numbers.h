@@ -26,7 +26,7 @@ public:
 };
 
 class Decimal {
-    int number;
+    long long number;
 public:
     Decimal(){number = 0;}
 
@@ -37,7 +37,7 @@ public:
     void set(int value){
         number = value ;
     }
-    int get(){
+    long long get(){
         return number;
     }
 

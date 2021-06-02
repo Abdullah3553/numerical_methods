@@ -11,8 +11,8 @@ class Number_Operations{
             {'8', 8},{'9', 9},{'A', 10},{'B', 11},
             {'C', 12},{'D', 13},{'E', 14},{'F', 15}
     };
-    int pow(int base, int power){
-        int return_num=1;
+    long long pow(long long base, long long power){
+        long long return_num=1;
         for(int i=0;i<power;i++)
             return_num*= base;
         return return_num;
@@ -25,8 +25,8 @@ class Number_Operations{
 public:
     // Binary >> all --Begin
 
-    int binary_to_decimal(Binary number){
-        int return_num = 0;
+    long long binary_to_decimal(Binary number){
+        long long return_num = 0;
         for(int i=(int)number.size()-1, j=0;i>-1;i--,j++){
             if(number[i]=='1')
                 return_num += pow(2, j);
@@ -44,8 +44,10 @@ public:
                 tmp_str.clear();
             }
         }
-        if(!tmp_str.empty())
+        if(!tmp_str.empty()) {
+            reverse_string(tmp_str);
             return_val += encoding[binary_to_decimal(Binary(tmp_str))];
+        }
         reverse_string(return_val);
         return return_val;
     }
@@ -60,8 +62,10 @@ public:
                 tmp_str.clear();
             }
         }
-        if(!tmp_str.empty())
+        if(!tmp_str.empty()) {
+        reverse_string(tmp_str);
             return_val += encoding[binary_to_decimal(Binary(tmp_str))];
+        }
         reverse_string(return_val);
         return return_val;
     }
@@ -91,8 +95,8 @@ public:
 //------------------------------//
     // Octal >> all --Begin
 
-    int octal_to_decimal(Octal number){
-        int return_num=0;
+    long long octal_to_decimal(Octal number){
+        long long return_num=0;
         for(int i=(int)number.size()-1, j=0;i>-1;i--,j++){
             return_num+=(pow(8, j) * decoding[number[i]]);
         }
@@ -111,8 +115,8 @@ public:
 //------------------------------//
     // Hexadecimal >> all --Begin
 
-    int hexadecimal_to_decimal(Hexadecimal number){
-        int return_num=0;
+    long long hexadecimal_to_decimal(Hexadecimal number){
+        long long return_num=0;
         for(int i=(int)number.size()-1, j=0;i>-1;i--,j++){
             return_num += ( pow(16, j) * decoding[number[i]] );
         }
