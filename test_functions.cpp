@@ -14,6 +14,7 @@ void test_binary(){
     string num;
     Number_Operations op;
     while(true){
+        // use the breakpoints to pause the execution ...
         num = rand_bin();
         cout << "Random Binary Number -> " << num << endl;
         Binary x(num);
