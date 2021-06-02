@@ -6,10 +6,12 @@ using namespace std;
 int main(){
     Number_Operations op;
     // cases for testing
-    Octal x("14");
-    cout << op.octal_to_binary(x) << endl;
-    cout << op.octal_to_decimal(x) << endl;
-    cout << op.octal_to_hexadecimal(x) << endl;
+    string input;
+    cin >> input;
+    Hexadecimal x(input);
+    cout << op.hexadecimal_to_decimal(x) << endl;
+    cout << op.hexadecimal_to_binary(x) << endl;
+    cout << op.hexadecimal_to_octal(x) << endl;
     return 0;
 }
 
