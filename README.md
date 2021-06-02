@@ -1,7 +1,7 @@
 # numerical methods
 A collection of Numerical methods written in C++.
 
-# Numbers system manipulation added 
+# Numbers system added 
 Converstions : 
 
 binary > decimal, hexadecimal, octal 
