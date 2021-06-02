@@ -30,11 +30,11 @@ class Decimal {
 public:
     Decimal(){number = 0;}
 
-    Decimal(int value){
+    Decimal(long long value){
         number = value;
     }
 
-    void set(int value){
+    void set(long long value){
         number = value ;
     }
     long long get(){

@@ -76,10 +76,10 @@ public:
 
     string decimal_to_binary(Decimal number){
         string return_val;
-        while(number.get()!=0){
+        do{
             return_val += encoding[number.get()%2];
             number.set(number.get()/2);
-        }
+        }while(number.get()!=0);
         reverse_string(return_val);
         return return_val;
     }
