@@ -1,6 +1,6 @@
-//#include <iostream>
-//#include "Number_operations.h"
-#include "test_functions.cpp"
+#include <iostream>
+#include "Number_operations.h"
+
 
 using namespace std;
 
